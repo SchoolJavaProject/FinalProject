@@ -7,7 +7,7 @@ public class randomColorGenerator {
 		String [] randomColors = new String [5];
 		String colors[] = {"Blue", "Red", "Green", "Yellow", "Black", "White"};
 		
-		for(int x = 0; x < colors.length; x ++)
+		for(int x = 0; x < randomColors.length; x ++)
 		{
 			int randomNumber = (1 + (int)(Math.random() * 6) - 1);
 			randomColors[x] = colors[randomNumber];
