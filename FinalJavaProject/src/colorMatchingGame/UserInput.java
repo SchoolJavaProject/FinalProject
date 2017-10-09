@@ -8,52 +8,52 @@ public class UserInput {
 
 		String userInput;
 		String color1, color2, color3, color4, color5;
-		String result;
+		String result1, result2, result3, result4, result5;
 		JOptionPane.showMessageDialog(null, "Colors to choose from are Blue, Red, Green, Yellow, Black, and White");
 		color1 = JOptionPane.showInputDialog(null, "Enter your first guess for the color >> ");
 		color2 = JOptionPane.showInputDialog(null, "Enter your second guess for the color >> ");
 		color3 = JOptionPane.showInputDialog(null, "Enter your third guess for the color >> ");
 		color4 = JOptionPane.showInputDialog(null, "Enter your fourth guess for the color >> ");
 		color5 = JOptionPane.showInputDialog(null, "Enter your fifth guess for the color >> ");
-		if (color1 == color[0])
+		if (color1 == randomColors[0])
 		{
-			result = "Correct";
+			result1 = "Correct";
 		}
-		if (color2 == color[1])
+		if (color2 == randomColors[1])
 		{
-			result = "Correct";
+			result2 = "Correct";
 		}
-		if (color3 == color[2])
+		if (color3 == randomColors[2])
 		{
-			result = "Correct";
+			result3 = "Correct";
 		}
-		if (color4 == color[3])
+		if (color4 == randomColors[3])
 		{
-			result = "Correct";
+			result4 = "Correct";
 		}
-		if (color5 == color[4])	
+		if (color5 == randomColors[4])	
 		{
-			result = "Correct";
+			result4 = "Correct";
 		}
-		if (color1 != color[0])
+		if (color1 != randomColors[0])
 		{
-			result = "Incorrect please correct";
+			result1 = "Incorrect please correct";
 		}
-		if (color2 != color[1])
+		if (color2 != randomColors[1])
 		{
-			result = "Incorrect please correct";
+			result2 = "Incorrect please correct";
 		}
-		if (color3 != color[2])
+		if (color3 != randomColors[2])
 		{
-			result = "Incorrect please correct";
+			result3 = "Incorrect please correct";
 		}
-		if (color4 != color[3])
+		if (color4 != randomColors[3])
 		{
-			result = "Incorrect please correct";
+			result4 = "Incorrect please correct";
 		}
-		if (color5 != color[4])	
+		if (color5 != randomColors[4])	
 		{
-			result = "Incorrect please correct";
+			result5 = "Incorrect please correct";
 		}
 		
 		
