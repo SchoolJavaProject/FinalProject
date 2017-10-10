@@ -6,54 +6,54 @@ public class UserInput {
 		// TODO Auto-generated method stub
 
 		String userInput;
-		String color1, color2, color3, color4, color5;
-		String result1, result2, result3, result4, result5;
+		String [] color = new String [5];
+		String [] result = new String [5];
 		String colors[] = {"Blue", "Red", "Green", "Yellow", "Black", "White"};
 		JOptionPane.showMessageDialog(null, "Colors to choose from are Blue, Red, Green, Yellow, Black, and White");
-		color1 = JOptionPane.showInputDialog(null, "Enter your first guess for the color >> ");
-		color2 = JOptionPane.showInputDialog(null, "Enter your second guess for the color >> ");
-		color3 = JOptionPane.showInputDialog(null, "Enter your third guess for the color >> ");
-		color4 = JOptionPane.showInputDialog(null, "Enter your fourth guess for the color >> ");
-		color5 = JOptionPane.showInputDialog(null, "Enter your fifth guess for the color >> ");
-		if (color1 == randomColors[0])
+		color[0] = JOptionPane.showInputDialog(null, "Enter your first guess for the color >> ");
+		color[1] = JOptionPane.showInputDialog(null, "Enter your second guess for the color >> ");
+		color[2] = JOptionPane.showInputDialog(null, "Enter your third guess for the color >> ");
+		color[3] = JOptionPane.showInputDialog(null, "Enter your fourth guess for the color >> ");
+		color[4] = JOptionPane.showInputDialog(null, "Enter your fifth guess for the color >> ");
+		if (color[0] == randomColorGenerator.displayRandomGenerator())
 		{
-			result1 = "Correct";
+			result[0] = "Correct";
 		}
-		if (color2 == randomColors[1])
+		if (color[1] == randomColors[1])
 		{
-			result2 = "Correct";
+			result[1] = "Correct";
 		}
-		if (color3 == randomColors[2])
+		if (color[2] == randomColors[2])
 		{
-			result3 = "Correct";
+			result[2] = "Correct";
 		}
-		if (color4 == randomColors[3])
+		if (color[3] == randomColors[3])
 		{
-			result4 = "Correct";
+			result[3] = "Correct";
 		}
-		if (color5 == randomColors[4])	
+		if (color[4] == randomColors[4])	
 		{
-			result4 = "Correct";
+			result[4] = "Correct";
 		}
-		if (color1 != randomColors[0])
+		if (color[0] != randomColors[0])
 		{
-			result1 = "Incorrect please correct";
+			result[0] = "Incorrect please correct";
 		}
-		if (color2 != randomColors[1])
+		if (color[1] != randomColors[1])
 		{
-			result2 = "Incorrect please correct";
+			result[1] = "Incorrect please correct";
 		}
-		if (color3 != randomColors[2])
+		if (color[2] != randomColors[2])
 		{
-			result3 = "Incorrect please correct";
+			result[2] = "Incorrect please correct";
 		}
-		if (color4 != randomColors[3])
+		if (color[3] != randomColors[3])
 		{
-			result4 = "Incorrect please correct";
+			result[3] = "Incorrect please correct";
 		}
-		if (color5 != randomColors[4])	
+		if (color[4] != randomColors[4])	
 		{
-			result5 = "Incorrect please correct";
+			result[4] = "Incorrect please correct";
 		}
 		
 	}

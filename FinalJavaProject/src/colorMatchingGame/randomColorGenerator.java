@@ -2,22 +2,30 @@ package colorMatchingGame;
 
 public class randomColorGenerator {
 
-	public static void main(String[] args) {
+	private static int randomNumber;
+
+	public static String displayRandomGenerator(String randomColor1, String randomColor2, String randomColor3,
+			String randomColor4, String randomColor5)
+	{
 		// TODO Auto-generated method stub
-		String [] randomColors = new String [5];
-		String colors[] = {"Blue", "Red", "Green", "Yellow", "Black", "White"};
-		
-		for(int x = 0; x < randomColors.length; x ++)
+		String color1 = "Blue";
+		String color2 = "Red";
+		String color3 = "Green";
+		String color4 = "Yellow";
+		String color5 = "Black";
+		String color6 = "White";
+		for(int x = 0; x < 6; x ++)
 		{
-			int randomNumber = (1 + (int)(Math.random() * 6) - 1);
-			randomColors[x] = colors[randomNumber];
+			if (x == 0) {
+			randomNumber = (1 + (int)(Math.random() * 6) - 1);
+				if (randomNumber == 0) {
+					randomColor1 = color1;
+				}
+				if (randomNumber == 1) {
+					randomColor1 = color2;
+				}
+			}
 		}
-		System.out.print(randomColors[0] + " ");
-		System.out.print(randomColors[1] + " ");
-		System.out.print(randomColors[2] + " ");
-		System.out.print(randomColors[3] + " ");
-		System.out.print(randomColors[4] + " ");
-		
 	}
 
 }
