@@ -1,6 +1,5 @@
 package colorMatchingGame;
 import javax.swing.JOptionPane;
-import colorMatchingGame.randomColorGenerator;
 public class UserInput {
 
 	public static void main(String[] args) {
@@ -9,6 +8,7 @@ public class UserInput {
 		String userInput;
 		String color1, color2, color3, color4, color5;
 		String result1, result2, result3, result4, result5;
+		String colors[] = {"Blue", "Red", "Green", "Yellow", "Black", "White"};
 		JOptionPane.showMessageDialog(null, "Colors to choose from are Blue, Red, Green, Yellow, Black, and White");
 		color1 = JOptionPane.showInputDialog(null, "Enter your first guess for the color >> ");
 		color2 = JOptionPane.showInputDialog(null, "Enter your second guess for the color >> ");
@@ -55,7 +55,6 @@ public class UserInput {
 		{
 			result5 = "Incorrect please correct";
 		}
-		
 		
 	}
 
