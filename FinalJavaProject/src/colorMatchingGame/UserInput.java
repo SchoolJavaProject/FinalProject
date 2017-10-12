@@ -5,23 +5,24 @@ public class UserInput {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int userInput;
-		String colors[] = {"Blue", "Red"};
+		int userInput[] = new int [5];
+		String colors[] = {"Blue", "Red", "Green", "Yellow", "Black", "White"};
 		
 		
 		
-		int randomNumber = (1 + (int)(Math.random() * 2) - 1);
+		int randomNumber = (1 + (int)(Math.random() * 6) - 1);
+		
+		for (int x = 0; x <= userInput.length; x ++) {
+			String color = JOptionPane.showInputDialog(null, "Colors to choose from are\nBlue = 0\nRed = 1\n"
+					+ "Green = 2\nYellow = 3\nBlack = 4\nand White = 5\nEnter a guess for the color >> ");
+			userInput[x] = Integer.parseInt(color);
+			randomColorGenerator.displayColor();
 		
 		
-	JOptionPane.showMessageDialog(null, "Colors to choose from are Blue = 0 , Red= 1, Green = 3, Yellow = 4, Black = 5, and White = 6"+ "");
-		String color = JOptionPane.showInputDialog(null, "Enter your first guess for the color >> ");
-		userInput = Integer.parseInt(color);
-		randomColorGenerator.displayColor();
-		
-		
-		if (userInput == randomNumber && userInput == 0)
-		{
-			System.out.print(colors[randomNumber] + " ");
+			if (userInput[0] == randomNumber && userInput[0] == 0)
+			{
+				System.out.print("The color was " + colors[randomNumber] + " and you guessed Blue");
+			}
 		}
 //		if (color[2] == randomColors[2])
 //		{

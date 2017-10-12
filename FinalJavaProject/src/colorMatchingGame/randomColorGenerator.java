@@ -6,15 +6,12 @@ public class randomColorGenerator {
 		// TODO Auto-generated method stub
 		
 		String colors[] = {"Blue", "Red", "Green", "Yellow", "Black", "White"};
+		int randomNumber[] = new int [5];
 		
-		
-		
-			int randomNumber = (1 + (int)(Math.random() * 6) - 1);
-			
-			
-		
-		System.out.print(colors[randomNumber] + " ");
-		
+		for (int x = 0; x <= randomNumber.length; x ++) {
+			randomNumber[x] = (1 + (int)(Math.random() * 6) - 1);
+			System.out.print(colors[randomNumber[x]] + " ");
+		}
 		
 	}
 
