@@ -7,56 +7,47 @@ public class UserInput {
 
 		int userInput[] = new int [5];
 		String colors[] = {"Blue", "Red", "Green", "Yellow", "Black", "White"};
+		int randomNumber[] = new int [5];
+		String color;
+		String colorInput;
+		int attempts = 1;
+		int y = 0;
+		//String answer
 		
-		
-		
-		int randomNumber = (1 + (int)(Math.random() * 6) - 1);
+		//answer = JOptionPane.showInputDialog(null, "Would you like to play? Yes or no?")
+		//while ("no".equalsIgnoreCase(answer)) {
+		for (int x = 0; x <= randomNumber.length; x ++) {
+			randomNumber[x] = (1 + (int)(Math.random() * 6) - 1);
+		}
 		
 		for (int x = 0; x <= userInput.length; x ++) {
-			String color = JOptionPane.showInputDialog(null, "Colors to choose from are\nBlue = 0\nRed = 1\n"
-					+ "Green = 2\nYellow = 3\nBlack = 4\nand White = 5\nEnter a guess for the color >> ");
-			userInput[x] = Integer.parseInt(color);
-			randomColorGenerator.displayColor();
-		
-		
-			if (userInput[0] == randomNumber && userInput[0] == 0)
-			{
-				System.out.print("The color was " + colors[randomNumber] + " and you guessed Blue");
-			}
+			colorInput = JOptionPane.showInputDialog(null, "Colors to choose from are\n" + colors[0] + "= 0\nRed = 1\n"
+					+ "Green = 2\nYellow = 3\nBlack = 4\nand White = 5\nEnter guess " + (x + 1) + " for the color >> ");
+			userInput[x] = Integer.parseInt(colorInput);
 		}
-//		if (color[2] == randomColors[2])
-//		{
-//			result[2] = "Correct";
-//		}
-//		if (color[3] == randomColors[3])
-//		{
-//			result[3] = "Correct";
-//		}
-//		if (color[4] == randomColors[4])	
-//		{
-//			result[4] = "Correct";
-//		}
-//		if (color[0] != randomColors[0])
-//		{
-//			result[0] = "Incorrect please correct";
-//		}
-//		if (color[1] != randomColors[1])
-//		{
-//			result[1] = "Incorrect please correct";
-//		}
-//		if (color[2] != randomColors[2])
-//		{
-//			result[2] = "Incorrect please correct";
-//		}
-//		if (color[3] != randomColors[3])
-//		{
-//			result[3] = "Incorrect please correct";
-//		}
-//		if (color[4] != randomColors[4])	
-//		{
-//			result[4] = "Incorrect please correct";
-//		}
 		
+		while (userInput[0] != randomNumber[0] || userInput[1] != randomNumber[1] || userInput[2] != randomNumber[2]
+				|| userInput[3] != randomNumber[3] || userInput[4] != randomNumber[4]) {
+			attempts ++;
+			if (userInput[y] != randomNumber[y]) {
+				colorInput = JOptionPane.showInputDialog(null, "You guessed incorrectly.\nColors to choose from are\nBlue = 0\nRed = 1\n"
+						+ "Green = 2\nYellow = 3\nBlack = 4\nand White = 5\nCorrect your guess for the color >> ");
+				userInput[y] = Integer.parseInt(colorInput);
+			}
+			if (userInput[y] == randomNumber[y]) {
+				System.out.println("You guessed correctly.");
+				y ++;
+			}
+			
+		}
+		
+		if (userInput[0] == randomNumber[0] && userInput[0] == 0)
+		{
+			color = "Blue";
+			System.out.print("The color was " + colors[randomNumber[0]] + " and you guessed " + color);
+		}
+		//answer = JOptionPane.showInputDialog(null, "Would you like to play again?")
+		//}
 	}
 
 }
