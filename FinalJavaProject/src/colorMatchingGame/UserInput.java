@@ -20,12 +20,7 @@ public class UserInput {
 		int highScoreHard = 2100000;
 		String difficultyInput;
 		int difficulty;
-		//String answerInput;
-		//int answer;
 		
-		//answerInput = JOptionPane.showInputDialog(null, "Would you like to play?\nYes = 0\nNo = 1");
-		//answer = Integer.parseInt(answerInput);
-		//while (answer == 0) {
 		// Random color generator
 		for (int x = 0; x < randomNumber.length; x ++) {
 			randomNumber[x] = (1 + (int)(Math.random() * 6) - 1);
@@ -98,8 +93,7 @@ public class UserInput {
 			// It tells the user how many attempts it took them and what the current high score is.
 			JOptionPane.showMessageDialog(null, "It took you " + attempts + " attempts to get it correct.\nThe highscore is "
 						+ highScoreEasy + ".");
-			//answer = JOptionPane.showInputDialog(null, "Would you like to play again?");
-			//}
+			Menu.main(null);
 		}
 		if (difficulty == 1) {
 			// It prompts the user to enter a number for guessing the color and tells them if they got it correct or not.
@@ -149,8 +143,7 @@ public class UserInput {
 			// It tells the user how many attempts it took them and what the current high score is.
 			JOptionPane.showMessageDialog(null, "It took you " + attempts + " attempts to get it correct.\nThe highscore is "
 						+ highScoreHard + ".");
-			//answer = JOptionPane.showInputDialog(null, "Would you like to play again?");
-			//}
+			Menu.main(null);
 		}
 	}
 }
