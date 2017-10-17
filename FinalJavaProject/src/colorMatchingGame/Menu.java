@@ -1,7 +1,6 @@
 package colorMatchingGame;
 
 import javax.swing.*;
-import javax.swing.JOptionPane;
 import java.awt.*;
 import java.awt.event.*;
 
@@ -36,8 +35,8 @@ public class Menu extends JFrame {
 				con.setLayout(new FlowLayout());
 				con.add(button);
 				con.setBackground(Color.BLACK);
-				button.setBackground(Color.BLUE);
-				button.setForeground(Color.WHITE);
+				button.setBackground(Color.RED);
+				button.setForeground(Color.YELLOW);
 				button.setMnemonic(KeyEvent.VK_M);
 				button.setActionCommand("go");
 				button.addActionListener(m -> UserInput.main(null));
@@ -48,8 +47,8 @@ public class Menu extends JFrame {
 				con2.setLayout(new FlowLayout());
 				con2.add(button2);
 				con2.setBackground(Color.BLACK);
-				button2.setBackground(Color.BLUE);
-				button2.setForeground(Color.WHITE);
+				button2.setBackground(Color.RED);
+				button2.setForeground(Color.YELLOW);
 				button2.setMnemonic(KeyEvent.VK_E);
 				button2.setActionCommand("stop");
 				button2.addActionListener(e -> System.exit(0));

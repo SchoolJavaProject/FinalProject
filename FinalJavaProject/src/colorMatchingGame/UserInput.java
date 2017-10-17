@@ -37,8 +37,8 @@ public class UserInput {
 			// It prompts the user to enter a number for guessing the color and tells them if they got it correct or not.
 			// This counts as attempt 1.
 			for (int x = 0; x < userInput.length; x ++) {
-				colorInput = JOptionPane.showInputDialog(null, "Colors to choose from are\n" + colors[0] + "= 0\nRed = 1\n"
-						+ "Green = 2\nYellow = 3\nBlack = 4\nWhite = 5\nEnter guess " + (x + 1) + " for the color >> ");
+				colorInput = JOptionPane.showInputDialog(null, "Colors to choose from are\n" + colors[0] + " = 0\n" + colors[1] + " = 1\n"
+						+ colors[2] + " = 2\n" + colors[3] + " = 3\n" + colors[4] + " = 4\n" + colors[5] + " = 5\nEnter guess " + (x + 1) + " for the color >> ");
 				userInput[x] = Integer.parseInt(colorInput);
 				guess1[x] = userInput[x];
 				if (userInput[x] == randomNumber[x]) {
@@ -59,7 +59,8 @@ public class UserInput {
 				if (userInput[y] != randomNumber[y]) {
 					colorInput = JOptionPane.showInputDialog(null, "Your guess " + (y + 1) + " is incorrect.\nYou guessed "
 							+ guess1[y] + " " + guess2[y] + " " + guess3[y] + " " + guess4[y] + " " + guess5[y] + " " + guess6[y]
-							+ "\nColors to choose from are\nBlue = 0\nRed = 1\nGreen = 2\nYellow = 3\nBlack = 4\nWhite = 5"
+							+ "\nColors to choose from are\n" + colors[0] + " = 0\n" + colors[1] + " = 1\n" + colors[2]
+							+ " = 2\n" + colors[3] + " = 3\n" + colors[4] + " = 4\n" + colors[5] + " = 5"
 							+ "\nCorrect your guess for the color >> ");
 					userInput[y] = Integer.parseInt(colorInput);
 					if (attempts == 1) {
@@ -104,8 +105,9 @@ public class UserInput {
 			// It prompts the user to enter a number for guessing the color and tells them if they got it correct or not.
 			// This counts as attempt 1.
 			for (int x = 0; x < userInput.length; x ++) {
-				colorInput = JOptionPane.showInputDialog(null, "Colors to choose from are\n" + colors[0] + "= 0\nRed = 1\n"
-						+ "Green = 2\nYellow = 3\nBlack = 4\nWhite = 5\nEnter guess " + (x + 1) + " for the color >> ");
+				colorInput = JOptionPane.showInputDialog(null, "Colors to choose from are\n" + colors[0] + "= 0\n" + colors[1]
+						+ " = 1\n" + colors[2] + " = 2\n" + colors[3] + " = 3\n" + colors[4] + " = 4\n" + colors[5]
+						+ " = 5\nEnter guess " + (x + 1) + " for the color >> ");
 				userInput[x] = Integer.parseInt(colorInput);
 				if (userInput[x] == randomNumber[x]) {
 					JOptionPane.showMessageDialog(null, "You guessed correctly.");
@@ -124,7 +126,8 @@ public class UserInput {
 					|| userInput[3] != randomNumber[3] || userInput[4] != randomNumber[4]) {
 				if (userInput[y] != randomNumber[y]) {
 					colorInput = JOptionPane.showInputDialog(null, "Your guess " + (y + 1) + " is incorrect.\nColors to choose from are"
-							+ "\nBlue = 0\nRed = 1\nGreen = 2\nYellow = 3\nBlack = 4\nWhite = 5\nCorrect your guess for the color >> ");
+							+ "\n" + colors[0] + " = 0\n" + colors[1] + " = 1\n" + colors[2] + " = 2\n" + colors[3] + " = 3\n"
+							+ colors[4] + " = 4\n" + colors[5] + " = 5\nCorrect your guess for the color >> ");
 					userInput[y] = Integer.parseInt(colorInput);
 					if (userInput[y] == randomNumber[y]) {
 						JOptionPane.showMessageDialog(null, "You guessed correctly.");
