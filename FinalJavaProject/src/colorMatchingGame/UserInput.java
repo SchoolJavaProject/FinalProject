@@ -3,21 +3,6 @@ import javax.swing.JOptionPane;
 public class UserInput {
 
 	public static void main(String[] args) {
-<<<<<<< HEAD
-		// TODO Auto-generated method stub
-
-		int userInput;
-		String colors[] = {"Blue", "Red"};
-		
-		
-		
-		int randomNumber = (1 + (int)(Math.random() * 2) - 1);
-		
-	JOptionPane.showMessageDialog(null, "Colors to choose from are Blue = 0 , Red= 1, Green = 3, Yellow = 4, Black = 5, and White = 6"+ "");
-		String color = JOptionPane.showInputDialog(null, "Enter your first guess for the color >> ");
-		userInput = Integer.parseInt(color);
-		randomColorGenerator.displayColor();
-=======
 		// Initializing variables
 		int userInput[] = new int [5];
 		String colors[] = {"Blue", "Red", "Green", "Yellow", "Black", "White"};
@@ -37,7 +22,6 @@ public class UserInput {
 		int difficulty;
 		//String answerInput;
 		//int answer;
->>>>>>> 42e46b25ae17ea16586119fb4fb3f29a9a86f4d6
 		
 		//answerInput = JOptionPane.showInputDialog(null, "Would you like to play?\nYes = 0\nNo = 1");
 		//answer = Integer.parseInt(answerInput);
