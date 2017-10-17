@@ -12,7 +12,6 @@ public class UserInput {
 		
 		int randomNumber = (1 + (int)(Math.random() * 2) - 1);
 		
-		
 	JOptionPane.showMessageDialog(null, "Colors to choose from are Blue = 0 , Red= 1, Green = 3, Yellow = 4, Black = 5, and White = 6"+ "");
 		String color = JOptionPane.showInputDialog(null, "Enter your first guess for the color >> ");
 		userInput = Integer.parseInt(color);
