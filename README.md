@@ -3,3 +3,4 @@
 <img src="Flow Chart pt2.PNG" alt="Flow chart pt2">
 <img src="Flow Chart pt3.PNG" alt="Flow chart pt3">
 <img src="Flow Chart pt4.PNG" alt="Flow chart pt4">
+<video src="https://youtu.be/xsqxl-bhO1s" type="video/mp4">
