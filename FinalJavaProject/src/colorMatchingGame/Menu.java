@@ -21,7 +21,7 @@ public class Menu extends JFrame {
 			public Menu()
 			{
 				//This is the section of code that changes what the buttons look like, you can change their color by typing in different values.
-				//This particular button is made unpressable by the setEnabled() command.
+				//This particular button is made unable to be pressed by the setEnabled() command.
 				setSize(SIZE1, SIZE1);
 				con1.setLayout(new FlowLayout());
 				con1.add(button1);
